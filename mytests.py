@@ -2,7 +2,7 @@ import unittest
 import main
 
 
-class MyTestCase(unittest.TestCase):
+class TestFizzBuzz(unittest.TestCase):
     def test_numbers(self):
         self.assertEqual(main.fizz_buzz(1), 1)
 
