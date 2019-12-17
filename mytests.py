@@ -7,13 +7,13 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(main.fizz_buzz(1), 1)
 
     def test_multiple_of_three(self):
-        self.assertEqual(main.fizz_buzz(3), "fizz")
+        self.assertEqual(main.fizz_buzz(3), "Fizz")
 
     def test_multiple_of_five(self):
-        self.assertEqual(main.fizz_buzz(5), "buzz")
+        self.assertEqual(main.fizz_buzz(5), "Buzz")
 
     def test_multiple_of_three_and_five(self):
-        self.assertEqual(main.fizz_buzz(15), "fizzbuzz")
+        self.assertEqual(main.fizz_buzz(15), "FizzBuzz")
 
 
 if __name__ == '__main__':
