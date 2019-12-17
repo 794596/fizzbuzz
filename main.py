@@ -1,25 +1,24 @@
+FIZZ_CONSTANT = 3
+BUZZ_CONSTANT = 5
 
 
-FIZZ = 3
-BUZZ = 5
-
-
-def fizzbuzz(integer):
-    if (integer % FIZZ == 0) & (integer % BUZZ == 0):
+def fizz_buzz(number):
+    if (number % FIZZ_CONSTANT == 0) & (number % BUZZ_CONSTANT == 0):
         return "fizzbuzz"
-    elif integer % FIZZ == 0:
+    elif number % FIZZ_CONSTANT == 0:
         return "fizz"
-    elif integer % BUZZ == 0:
+    elif number % BUZZ_CONSTANT == 0:
         return "buzz"
     else:
-        return integer
+        return number
 
 
-string = []
-for i in range(0, 31):
-    if i <= 30:
-        string.append(str(fizzbuzz(i)))
+def string_fizz_buzz(maximum):
+    string = []
+    for integer in range(0, maximum):
+        string.append(str(fizz_buzz(integer)))
 
-print(", ".join(string))
+    print(", ".join(string))
 
 
+string_fizz_buzz(40)
